@@ -1,1 +1,3 @@
 # buildsupport
+
+Common build configuration.
