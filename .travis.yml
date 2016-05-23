@@ -9,5 +9,5 @@ jdk:
 
 install: ./mvnw --version
 
-script: ./mvnw -B clean deploy
+script: ./mvnw -B -s ./travis/settings.xml clean deploy
 
