@@ -68,6 +68,8 @@
     <!--
     Deployment configuration.
     -->
+    <deployAtEnd>true</deployAtEnd>
+
     <public.serverId>ossrh</public.serverId>
     <public.nexusUrl>https://oss.sonatype.org</public.nexusUrl>
 
