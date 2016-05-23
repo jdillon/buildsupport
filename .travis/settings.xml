@@ -1,7 +1,10 @@
-<servers>
-  <server>
-    <id>ossrh</id>
-    <username>jdillon</username>
-    <password>${env.SONATYPE_PASSWORD}</password>
-  </server>
-</servers>
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+  <servers>
+    <server>
+      <id>ossrh</id>
+      <username>jdillon</username>
+      <password>${env.SONATYPE_PASSWORD}</password>
+    </server>
+  </servers>
+</settings>
