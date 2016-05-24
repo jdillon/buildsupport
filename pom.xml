@@ -16,18 +16,18 @@
 
   <url>http://planet57.com/</url>
 
-  <!--<licenses>-->
-    <!--<license>-->
-      <!--<name>ASL2</name>-->
-      <!--<url>http://opensource.org/licenses/Apache-2.0</url>-->
-    <!--</license>-->
-  <!--</licenses>-->
+  <licenses>
+    <license>
+      <name>ASL2</name>
+      <url>http://opensource.org/licenses/Apache-2.0</url>
+    </license>
+  </licenses>
 
-  <!--<scm>-->
-    <!--<url>https://github.com/jdillon/buildsupport</url>-->
-    <!--<connection>scm:git:git://github.com/jdillon/buildsupport.git</connection>-->
-    <!--<developerConnection>scm:git:git@github.com:jdillon/buildsupport.git</developerConnection>-->
-  <!--</scm>-->
+  <scm>
+    <url>https://github.com/jdillon/buildsupport</url>
+    <connection>scm:git:git://github.com/jdillon/buildsupport.git</connection>
+    <developerConnection>scm:git:git@github.com:jdillon/buildsupport.git</developerConnection>
+  </scm>
 
   <prerequisites>
     <maven>3.3.3</maven>
