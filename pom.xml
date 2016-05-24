@@ -8,7 +8,7 @@
   <name>${project.groupId}:${project.artifactId}</name>
   <packaging>pom</packaging>
 
-  <version>1-SNAPSHOT</version>
+  <version>1</version>
 
   <description>
     Common build configuration.
@@ -37,7 +37,7 @@
     <!--
     Define buildsupport version, this value must always be a constant
     -->
-    <buildsupport.version>1-SNAPSHOT</buildsupport.version>
+    <buildsupport.version>1</buildsupport.version>
 
     <!--
     File encodings.

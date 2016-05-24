@@ -6,7 +6,7 @@
   <parent>
     <groupId>com.planet57.buildsupport</groupId>
     <artifactId>buildsupport</artifactId>
-    <version>1-SNAPSHOT</version>
+    <version>1</version>
   </parent>
 
   <artifactId>public-parent</artifactId>
