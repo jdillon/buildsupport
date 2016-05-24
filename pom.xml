@@ -29,6 +29,14 @@
     <developerConnection>scm:git:git@github.com:jdillon/buildsupport.git</developerConnection>
   </scm>
 
+  <developers>
+    <developer>
+      <id>jdillon</id>
+      <name>Jason Dillon</name>
+      <email>jason@planet57.com</email>
+    </developer>
+  </developers>
+
   <prerequisites>
     <maven>3.3.3</maven>
   </prerequisites>
