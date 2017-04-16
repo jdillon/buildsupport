@@ -13,7 +13,6 @@ branches:
 jdk:
   - oraclejdk8
 
-# skip prepare step
-#install: ./build ci-prepare $MAVEN_OPTIONS
+install: ./build ci-prepare $MAVEN_OPTIONS
 
 script: ./build ci-build $MAVEN_OPTIONS
