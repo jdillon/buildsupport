@@ -2,7 +2,9 @@ language: java
 
 env:
   global:
-    secure: Hy88FvBCod9ZoQhALpCmwWcmCrHYet4rcsIqWPIa0rbxNMCQVAQyozhaw//mY3dh88blnsY4qjI4/4W3e3Rem5EGKgVs21qxxmsNAVC8v5X51MPkQVaf32AnUwjOFGZV4Kzh2yqOEkbsML8rSPkqVjqodI/05u3jvfwQ8kn+J5gwYVTRx1U2WqHAmI/7A8MTr2gS7PpOFO16WMphk/UfzeNU50WJEAMbIVjgW56L5qOc/kxyTCtHE9tRqXD900KNKnI1RP+bBGPpYWmKQbafAIwFAcusiZ7yjCzH5iEoJUHQL4DnA7+wqSPXM68b6BBQxfyU0o6xWtzyqwQ6t58fRb/7eKGPOfoJkpx5lYTEGwz6gWumSViqHNWfJyL9e4402i/6xdhVwX0oEev4Iw23mkWdXv3guKwo9qAmPYB/4uBj42nqVwyzPit4o62X6qcxPCcaZtGcU6pA0j12Xn6VZMuFOaMvW6VZftiSGAPWH5m895ldnZhAWYEO+LbCDr61g6YF9u+JDPKCM3eL1npsmBPWUFiqk+0FlisnjZt69UpZpmDsLLPNK2g7MfM3viCGtV1JAROdmPagCxqotpFSfqFPbGk2rLEJmCaENP9FroJpgtDFd+GOCQBxK3j73OsqV1INX8+TsCBJIfMhR0r6Hwl/TSh8CxErNNgfA2r6vlI=
+    - secure: 'Hy88FvBCod9ZoQhALpCmwWcmCrHYet4rcsIqWPIa0rbxNMCQVAQyozhaw//mY3dh88blnsY4qjI4/4W3e3Rem5EGKgVs21qxxmsNAVC8v5X51MPkQVaf32AnUwjOFGZV4Kzh2yqOEkbsML8rSPkqVjqodI/05u3jvfwQ8kn+J5gwYVTRx1U2WqHAmI/7A8MTr2gS7PpOFO16WMphk/UfzeNU50WJEAMbIVjgW56L5qOc/kxyTCtHE9tRqXD900KNKnI1RP+bBGPpYWmKQbafAIwFAcusiZ7yjCzH5iEoJUHQL4DnA7+wqSPXM68b6BBQxfyU0o6xWtzyqwQ6t58fRb/7eKGPOfoJkpx5lYTEGwz6gWumSViqHNWfJyL9e4402i/6xdhVwX0oEev4Iw23mkWdXv3guKwo9qAmPYB/4uBj42nqVwyzPit4o62X6qcxPCcaZtGcU6pA0j12Xn6VZMuFOaMvW6VZftiSGAPWH5m895ldnZhAWYEO+LbCDr61g6YF9u+JDPKCM3eL1npsmBPWUFiqk+0FlisnjZt69UpZpmDsLLPNK2g7MfM3viCGtV1JAROdmPagCxqotpFSfqFPbGk2rLEJmCaENP9FroJpgtDFd+GOCQBxK3j73OsqV1INX8+TsCBJIfMhR0r6Hwl/TSh8CxErNNgfA2r6vlI='
+    - MAVEN_SETTINGS='.travis/settings.xml'
+    - MAVEN_OPTIONS="-V -B -s $MAVEN_SETTINGS"
 
 branches:
   except:
@@ -11,7 +13,6 @@ branches:
 jdk:
   - oraclejdk8
 
-install: ./mvnw --version
+install: ./build ci-prepare $MAVEN_OPTIONS
 
-script: ./mvnw -B -s .travis/settings.xml clean deploy
-
+script: ./build ci-build $MAVEN_OPTIONS
