@@ -113,9 +113,10 @@
   </properties>
 
   <repositories>
+    <!-- variables are apparently unhappy to be used in id/url elements -->
     <repository>
-      <id>${public.serverId}</id>
-      <url>${public-snapshot.url}</url>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
       <releases>
         <enabled>false</enabled>
       </releases>
